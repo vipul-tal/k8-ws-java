@@ -1,0 +1,8 @@
+server:
+  port: 8082
+
+inventory:
+  espresso-shot: 10
+  milk: 1000
+  milk-foam: 500
+  hot-water: 99999999 # Use a large value to indicate "unlimited"
