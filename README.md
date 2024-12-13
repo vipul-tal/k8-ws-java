@@ -125,7 +125,7 @@ MILK_FOAM_QUANTITY
 3. Navigate to inventory-service folder : cd inventory-service
 4. mvn clean install
 5. mvn spring-boot:run
-6. Inventory service url should be set in INVENTORY_SERVICE_URL environment variable. Default value is http://localhost:8082
+6. Inventory service url should be set in INVENTORY_URL environment variable. Default value is http://localhost:8082
 7. In separate terminal navigate to order-service : cd order-service
 8. mvn clean install
 9. mvn spring-boot:run
