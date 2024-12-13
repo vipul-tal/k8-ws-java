@@ -6,7 +6,7 @@ import com.talentica.workshop.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+@RestControllerdock
 @RequestMapping("/order")
 public class OrderController {
 
