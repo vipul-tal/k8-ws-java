@@ -1,0 +1,2 @@
+orderservice : https://hub.docker.com/repository/docker/vipultal/order-service/general
+inventory service : https://hub.docker.com/repository/docker/vipultal/inventory-service/general
