@@ -1,0 +1,22 @@
+docker network ls
+
+docker network create my_network
+
+docker container run -d -p 8082:8082 inventory-service
+
+docker rename fb inventory-service
+
+docker run -d --name order-service  -p 8083:8083 -e inventory.url=http://inventory-service:8082 order-service
+
+
+docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS                   PORTS                                       NAMES
+0f96bbec5473   order-service       "java -jar order-ser…"   4 minutes ago    Up 4 minutes             0.0.0.0:8083->8083/tcp, :::8083->8083/tcp   order-service
+fb4dc5791c4d   inventory-service   "java -jar inventory…"   58 minutes ago   Up 58 minutes            0.0.0.0:8082->8082/tcp, :::8082->8082/tcp   inventory-service
+f20408c88733   nginx:latest        "/docker-entrypoint.…"   11 days ago      Exited (0) 11 days ago       
+                                        brave_keller
+docker network connect my_network 0f
+docker network connect my_network fb
+
+
+
